@@ -1,0 +1,183 @@
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJfcwLoRjyNIgRjNxDj6I-wmw",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJlfU6PyPyNIgRd70H1b1poUQ",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 40.44887019999999,
+               "lng" : -79.9411516
+            },
+            "southwest" : {
+               "lat" : 40.4452522,
+               "lng" : -79.94614729999999
+            }
+         },
+         "copyrights" : "Map data ©2019 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "0.5 mi",
+                  "value" : 787
+               },
+               "duration" : {
+                  "text" : "10 mins",
+                  "value" : 575
+               },
+               "end_address" : "645 Clyde St, Pittsburgh, PA 15213, USA",
+               "end_location" : {
+                  "lat" : 40.44887019999999,
+                  "lng" : -79.94582919999999
+               },
+               "start_address" : "1065 Morewood Pl, Pittsburgh, PA 15213, USA",
+               "start_location" : {
+                  "lat" : 40.4452522,
+                  "lng" : -79.9413519
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 159
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 117
+                     },
+                     "end_location" : {
+                        "lat" : 40.4460039,
+                        "lng" : -79.9422088
+                     },
+                     "html_instructions" : "Head \u003cb\u003enortheast\u003c/b\u003e on \u003cb\u003eMorewood Pl\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "ymzuFlp|fNOG_@SMGECE?C@C@C@QNGFMNIPILCFAFAJ?R?@?l@?HBZ"
+                     },
+                     "start_location" : {
+                        "lat" : 40.4452522,
+                        "lng" : -79.9413519
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 161
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 107
+                     },
+                     "end_location" : {
+                        "lat" : 40.4474713,
+                        "lng" : -79.94250649999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eMorewood Ave\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "orzuFxu|fNE?GAK@sBLI@oAJq@HM@@R"
+                     },
+                     "start_location" : {
+                        "lat" : 40.4460039,
+                        "lng" : -79.9422088
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 247
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 188
+                     },
+                     "end_location" : {
+                        "lat" : 40.4472373,
+                        "lng" : -79.9453649
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eFifth Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "u{zuFtw|fNNxDDjADdA@x@JrBB~@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.4474713,
+                        "lng" : -79.94250649999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 178
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 130
+                     },
+                     "end_location" : {
+                        "lat" : 40.4485771,
+                        "lng" : -79.94614729999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eClyde St\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "gzzuFni}fNiCPa@LI@CBC@CBCBABCDCDEDu@vA"
+                     },
+                     "start_location" : {
+                        "lat" : 40.4472373,
+                        "lng" : -79.9453649
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "138 ft",
+                        "value" : 42
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 33
+                     },
+                     "end_location" : {
+                        "lat" : 40.44887019999999,
+                        "lng" : -79.94582919999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "sb{uFln}fNy@_A"
+                     },
+                     "start_location" : {
+                        "lat" : 40.4485771,
+                        "lng" : -79.94614729999999
+                     },
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "ymzuFlp|fNcAg@I@GBYVW`@MTCR?lABZE?S?}BNaCTM@@RTdGVrHiCPa@LMDMLcAhBy@_A"
+         },
+         "summary" : "Morewood Pl and Fifth Ave",
+         "warnings" : [
+            "Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
