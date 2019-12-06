@@ -15,8 +15,8 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate{
     
 //    let route = Route()
     
-    var userRadius = 0.0
-    let userRouteModel = routeBuilder()
+    var userRadius = 400.0
+    var userRouteModel = routeBuilder()
     
     let locationManager = CLLocationManager()
     var userCurrentLat = 0.0
@@ -318,6 +318,8 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     func routeCreation() {
+        
+        userRouteModel = routeBuilder()
         
         let first = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + String(userCurrentLat) + ","
         let second = String(userCurrentLong) + "&radius="

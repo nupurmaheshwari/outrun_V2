@@ -21,7 +21,7 @@ class Scene: SKScene {
         zombiesLabel.fontSize = 26
         zombiesLabel.fontName = "AvenirNextCondensed-Regular"
         zombiesLabel.color = .white
-        zombiesLabel.position = CGPoint(x: 100, y: 36)
+        zombiesLabel.position = CGPoint(x: 95, y: 36)
         addChild(zombiesLabel)
     }
     
@@ -36,7 +36,7 @@ class Scene: SKScene {
         
         if currentTime > creationTime {
             createZombieAnchor()
-            creationTime = currentTime + TimeInterval(randomFloat(min: 10.0, max: 15.0))
+            creationTime = currentTime + TimeInterval(randomFloat(min: 20.0, max: 30.0))
         }
     }
 
@@ -55,10 +55,10 @@ class Scene: SKScene {
         let _360degrees = 2.0 * Float.pi
         
         // Create a rotation matrix in the X-axis
-        let rotateX = simd_float4x4(SCNMatrix4MakeRotation(_360degrees * randomFloat(min: 0.5, max: 0.7), 1, 0, 0))
+        let rotateX = simd_float4x4(SCNMatrix4MakeRotation(_360degrees * randomFloat(min: 0.4, max: 0.6), 1, 0, 0))
         
         // Create a rotation matrix in the Y-axis
-        let rotateY = simd_float4x4(SCNMatrix4MakeRotation(_360degrees * randomFloat(min: 0.5, max: 0.7), 0, 1, 0))
+        let rotateY = simd_float4x4(SCNMatrix4MakeRotation(_360degrees * randomFloat(min: 0.4, max: 0.6), 0, 1, 0))
         
         // Combine both rotation matrices
         let rotation = simd_mul(rotateX, rotateY)
@@ -108,6 +108,21 @@ class Scene: SKScene {
                 // Excecute the actions
                 node.run(sequenceAction)
             }
+            
+            else if node.name == "box" {
+                 let fadeOut = SKAction.fadeOut(withDuration: 0.5)
+                 let remove = SKAction.removeFromParent()
+                 
+                 // Group the fade out and sound actions
+                 let groupKillingActions = SKAction.group([fadeOut])
+                 // Create an action sequence
+                 let sequenceAction = SKAction.sequence([groupKillingActions, remove])
+                 
+                 points += 10
+                 
+                 // Excecute the actions
+                 node.run(sequenceAction)
+             }
             
         }
     }
