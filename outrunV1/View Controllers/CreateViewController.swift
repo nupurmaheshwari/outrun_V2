@@ -103,7 +103,7 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     @IBAction func fifteenMinutesPressed(_ sender: Any) {
-        userRadius = 1600
+        userRadius = 1000
 
         //change button to reflect click
         fifteenMinuteButton.backgroundColor = UIColor(red: 1.52, green: 0.56, blue: 1.16, alpha: 0.8)
@@ -137,7 +137,7 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     @IBAction func halfMilePressed(_ sender: Any) {
-        userRadius = 1609.34
+        userRadius = 804.672
         
         //change button to reflect click
         halfMileButton.backgroundColor = UIColor(red: 1.52, green: 0.56, blue: 1.16, alpha: 0.8)
@@ -169,7 +169,7 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     @IBAction func oneMilePressed(_ sender: Any) {
-        userRadius = 4828.03
+        userRadius = 1609.34
         
         //change button to reflect click
         oneMileButton.backgroundColor = UIColor(red: 1.52, green: 0.56, blue: 1.16, alpha: 0.8)
@@ -201,7 +201,7 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     @IBAction func mileHalfPressed(_ sender: Any) {
-        userRadius = 8046.72
+        userRadius = 2414.02
 
         //change button to reflect click
         mileHalfButton.backgroundColor = UIColor(red: 1.52, green: 0.56, blue: 1.16, alpha: 0.8)
@@ -245,6 +245,7 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate{
             userRouteModel.chosenRoute.currentSeverity = "hard"
             userRouteModel.chosenRoute.otherSeverity = "easy"
         }
+
     }
     
     override func viewDidLoad() {
@@ -328,6 +329,8 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate{
         
         userRouteModel.refresh(api) { [unowned userRouteModel] in
             DispatchQueue.global(qos: .userInitiated).async {
+                
+                
                 let randNumber = Int.random(in: 0 ..< userRouteModel.results.count)
                 
                 userRouteModel.chosenHalfPoint = [userRouteModel.results[randNumber]]
@@ -340,7 +343,7 @@ class CreateViewController: UIViewController, CLLocationManagerDelegate{
 
                 userRouteModel.chosenRoute.refresh(api2) {[unowned userRouteModel] in
                     DispatchQueue.main.async {
-                        print(userRouteModel.chosenRoute.route)
+                        //print(userRouteModel.chosenRoute.route)
                     }
 
                 }

@@ -33,6 +33,7 @@ class GameViewController: UIViewController, ARSKViewDelegate {
 
     
     override func viewDidLoad() {
+        print(directions.currentSeverity)
         super.viewDidLoad()
         
         //ar scene

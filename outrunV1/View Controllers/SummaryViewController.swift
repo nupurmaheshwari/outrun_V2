@@ -57,7 +57,7 @@ class SummaryViewController: UIViewController {
         for i in directions.route[0].legs[0].steps {
             path.add(CLLocationCoordinate2D(latitude: i.startLocation.lat, longitude: i.startLocation.lng))
             path.add(CLLocationCoordinate2D(latitude: i.endLocation.lat, longitude: i.endLocation.lng))
-            print(i.htmlInstructions)
+            //print(i.htmlInstructions)
         }
         
         
